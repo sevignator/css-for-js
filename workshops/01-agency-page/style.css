@@ -1,0 +1,78 @@
+:root {
+  --fs-m: 1rem;
+  --fs-l: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-xxl: 2rem;
+  --clr-primary: hsl(160deg, 100%, 30%);
+  --clr-secondary-light: hsl(45deg, 100%, 50%);
+  --clr-secondary-dark: hsl(45deg, 100%, 40%);
+  --clr-gray-black: hsl(0deg, 0%, 0%);
+  --clr-gray-very-dark: hsl(0deg, 0%, 10%);
+  --clr-gray-dark: hsl(0deg, 0%, 30%);
+  --clr-gray-medium: hsl(0deg, 0%, 40%);
+  --clr-gray-light: hsl(0deg, 0%, 60%);
+  --clr-gray-white: hsl(0deg, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: var(--fs-m);
+  line-height: 1.5;
+}
+
+/* Add styles here! */
+header {
+  margin-block: 64px 48px;
+}
+
+main {
+  padding-block: 48px;
+  background-color: var(--clr-gray-medium);
+  border-top: solid 8px var(--clr-gray-light);
+}
+
+strong {
+  font-weight: 700;
+  color: var(--clr-primary);
+}
+
+.max-width-wrapper {
+  max-width: 630px;
+  margin-inline: auto;
+  padding: 16px;
+}
+
+.intro-chunk {
+  max-width: 320px;
+}
+
+.title {
+  margin-bottom: 48px;
+  font-size: var(--fs-xxl);
+}
+
+.card {
+  margin-inline: -24px;
+  padding: 24px;
+  background-color: #fff;
+  border-bottom: solid 8px var(--clr-gray-light);
+}
+
+.indented-heading {
+  width: fit-content;
+  margin: -16px 0 0 -32px;
+  padding: 8px 32px;
+  background-color: var(--clr-secondary-light);
+  border-bottom: solid 8px var(--clr-secondary-dark);
+}
+
+.card > :last-child {
+  margin-bottom: 0;
+}
